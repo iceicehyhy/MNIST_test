@@ -43,13 +43,12 @@ from tensorflow.keras import layers
 # x_train=x_train[10000:]
 # y_train=y_train[10000:]
 
-data_dir = '/home/iceicehyhy/Dataset/MNIST_224X224_3/train'
+data_dir = '/export/home/iceicehyhy/dataset/MNIST_224X224_3/train'
 img_height = 224
 img_width = 224
 batch_size = 32
 
-test_data_dir = '/home/iceicehyhy/Dataset/MNIST_224X224_3/test'
-
+test_data_dir = '/export/home/iceicehyhy/dataset/MNIST_224X224_3/test'
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
   data_dir,
   validation_split=0.2,
